@@ -1,0 +1,23 @@
+name: World Bank Market Intelligence
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 5 * * 1'
+permissions:
+  contents: read
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch public World Bank indicators
+        run: python worldbank/report.py worldbank-market-report.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: worldbank-market-report
+          path: worldbank-market-report.json
+          retention-days: 30
