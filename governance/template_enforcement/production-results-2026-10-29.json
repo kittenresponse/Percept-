@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-29",
+  "scope": "Huawei XLSX template comparison in document-control intake",
+  "flow_id": "qjVH5ZZslEse1Lrz6BFcL",
+  "published_enabled": true,
+  "local_tests_passed": 14,
+  "production_tests": [
+    {
+      "run_id": "rb2UWRvxMhTkgoIccleTa",
+      "environment": "PRODUCTION",
+      "trigger": "Native Tables create action",
+      "actual_drive_readback": true,
+      "template_validation": "PASS",
+      "release_decision": "BLOCK",
+      "audit_written": true
+    },
+    {
+      "run_id": "eqiqXqOuHBiFrPvdEYA7Z",
+      "environment": "PRODUCTION",
+      "trigger": "Native Tables create action",
+      "actual_drive_readback": true,
+      "template_validation": "BLOCK",
+      "reason": "Recorded document SHA256 differs from actual downloaded bytes",
+      "release_decision": "BLOCK",
+      "audit_written": true
+    }
+  ],
+  "limitations": [
+    "Other document classes have no verified comparison profile",
+    "New images and photo pages are not permitted by this profile",
+    "Record updates require a new validation request",
+    "Direct MCP table insert did not produce an observed trigger; native Tables action did",
+    "External dispatch routes are not connected to gate",
+    "Atomic serial and authenticated exact-file approval are not implemented",
+    "Rendered layout still requires review"
+  ],
+  "system_wide_enforcement": false,
+  "production_certified": false
+}
