@@ -1,7 +1,7 @@
 name: Percept CI Failure Incident Reporter
 on:
   workflow_run:
-    workflows: ["Percept QR Release Gate"]
+    workflows: ["QR release gate tests"]
     types: [completed]
 permissions:
   issues: write
@@ -20,6 +20,7 @@ jobs:
           set -eu
           title="Automated failure: Percept QR Release Gate run ${RUN_ID}"
           body="Automated detection from GitHub Actions.\n\nFailed run: ${RUN_URL}\n\nClassification: release-gate CI failure.\n\nInvestigation required; do not claim all releases are blocked until integration is proven."
+          gh label create percept-mistake --repo "$REPO" --color B60205 --force
           gh issue create --repo "$REPO" --title "$title" --body "$(printf '%b' "$body")" --label "percept-mistake" || {
             echo "Issue creation failed; ensure percept-mistake label exists."
             exit 1
