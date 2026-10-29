@@ -1,0 +1,11 @@
+{
+  "system": "Percept Intelligence Engine",
+  "mode": "read-only",
+  "release": "BLOCKED",
+  "release_authorized": false,
+  "checks": "enabled",
+  "verification": "not production-certified",
+  "source": "sanitized operational summary",
+  "updated_at": "2026-10-29",
+  "notice": "No confidential data or approval tokens included."
+}
