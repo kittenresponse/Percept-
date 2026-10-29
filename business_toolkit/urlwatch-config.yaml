@@ -1,0 +1,7 @@
+report:
+  stdout:
+    enabled: true
+display:
+  new: true
+  unchanged: false
+  error: true

@@ -1,0 +1,14 @@
+{
+  "README.md": "4c3e513a3350a7fe57123f252bc973ce7c835afc50796de8e0a6fddca65c9471",
+  "requirements.lock": "b3948c8639585db1f0b1577ceb3e6109c657a138d1afbc0f620879d4240503f5",
+  "install.py": "09a9045315bc3209dad6b19baed39cf5516f693aab6a2a1504f20444efd53d0d",
+  "toolkit.py": "2f68b78e62f2ec20a413353c738e1acae6b2943dd7ff80040e402a16263c2526",
+  "selftest.py": "ffdca06c4b735b5d0a5adac8ec076d712f056c16219ba20a376a89e012c5ce44",
+  "test-report.json": "b23668ca4942588b1c7741ecf6190cec43d83c8f2431480d3690b43ad50b7db4",
+  "installation-status.json": "ad9c58ed7e2c5ddc40857dfa7d94b2d78c6644ce7343cca7d9cd328204028408",
+  "urls.yaml": "5c33e646b767540d11fe6e8ccc7ff7530e16ca1a5817eaec79b474d02a438b3a",
+  "urlwatch-config.yaml": "fcbd6c1541066c51847055bf4fc5768031c750832f64b60efec8be6371dd47a4",
+  "approved-docx-masters.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+  ".gitignore": "a993ab396afb3f03caa8f7acf84f57092eca9116095917ccee5fce22a67abeea",
+  "manual-test.yml": "e514987551dfafd2970fb4b9caf0f934850482778ebb89a551f7f580eb48a70f"
+}

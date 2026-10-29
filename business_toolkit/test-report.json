@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-29",
+  "scope": "Synthetic local acceptance tests only",
+  "checks": [
+    {
+      "test": "Frictionless accepts valid sample",
+      "passed": true
+    },
+    {
+      "test": "Frictionless rejects grade and negative price",
+      "passed": true
+    },
+    {
+      "test": "DOCX render preserves header/footer and escapes text",
+      "passed": true
+    },
+    {
+      "test": "DOCX source unchanged and release denied",
+      "passed": true
+    },
+    {
+      "test": "Unregistered DOCX master rejected",
+      "passed": true
+    },
+    {
+      "test": "OCRmyPDF executes actual image-only scan",
+      "passed": true
+    },
+    {
+      "test": "OCR output has searchable invoice text",
+      "passed": true
+    },
+    {
+      "test": "pdfcpu validates OCR PDF",
+      "passed": true
+    },
+    {
+      "test": "pdfcpu merges PDFs",
+      "passed": true
+    },
+    {
+      "test": "pdfcpu rejects malformed PDF",
+      "passed": true
+    },
+    {
+      "test": "urlwatch initial snapshot and changed-page diff",
+      "passed": true
+    },
+    {
+      "test": "Datasette Lite static app and worker installed",
+      "passed": true
+    }
+  ],
+  "passed": 12,
+  "versions": {
+    "urlwatch": "2.29",
+    "docxtpl": "0.20.2",
+    "frictionless": "5.21.0",
+    "ocrmypdf": "17.13.0"
+  },
+  "automatic_monitoring_enabled": false,
+  "external_release_authorized": false
+}

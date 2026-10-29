@@ -1,0 +1,11 @@
+name: ADB institutional procurement notices
+url: https://www.adb.org/business/institutional-procurement/notices
+filter:
+  - html2text:
+      method: re
+---
+name: Navoiyazot PVC announcements
+url: https://www.navoiyazot.uz/en/posts/pvc-at-reduced-prices-73
+filter:
+  - html2text:
+      method: re

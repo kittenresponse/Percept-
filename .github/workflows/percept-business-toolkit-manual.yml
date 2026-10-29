@@ -1,0 +1,20 @@
+name: Percept business toolkit - manual synthetic checks
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install operating-system dependencies
+        run: sudo apt-get update && sudo apt-get install -y tesseract-ocr ghostscript fonts-dejavu-core
+      - name: Install pinned on-demand tools
+        run: python business_toolkit/install.py
+      - name: Run synthetic tests
+        run: business_toolkit/.venv/bin/python business_toolkit/selftest.py
