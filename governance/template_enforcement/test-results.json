@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-29",
+  "cases": [
+    {
+      "case": "unchanged",
+      "expected": "PASS",
+      "actual": "PASS",
+      "passed": true
+    },
+    {
+      "case": "permitted_item",
+      "expected": "PASS",
+      "actual": "PASS",
+      "passed": true
+    },
+    {
+      "case": "wrong_receiver",
+      "expected": "BLOCK",
+      "actual": "BLOCK",
+      "passed": true
+    },
+    {
+      "case": "changed_logo",
+      "expected": "BLOCK",
+      "actual": "BLOCK",
+      "passed": true
+    },
+    {
+      "case": "changed_format",
+      "expected": "BLOCK",
+      "actual": "BLOCK",
+      "passed": true
+    },
+    {
+      "case": "changed_merges",
+      "expected": "BLOCK",
+      "actual": "BLOCK",
+      "passed": true
+    },
+    {
+      "case": "changed_quantity_without_total",
+      "expected": "BLOCK",
+      "actual": "BLOCK",
+      "passed": true
+    },
+    {
+      "case": "formula_injection",
+      "expected": "BLOCK",
+      "actual": "BLOCK",
+      "passed": true
+    },
+    {
+      "case": "removed_part",
+      "expected": "BLOCK",
+      "actual": "BLOCK",
+      "passed": true
+    },
+    {
+      "case": "added_macro",
+      "expected": "BLOCK",
+      "actual": "BLOCK",
+      "passed": true
+    },
+    {
+      "case": "changed_print",
+      "expected": "BLOCK",
+      "actual": "BLOCK",
+      "passed": true
+    },
+    {
+      "case": "changed_signature",
+      "expected": "BLOCK",
+      "actual": "BLOCK",
+      "passed": true
+    },
+    {
+      "case": "invalid_zip",
+      "passed": true
+    },
+    {
+      "case": "truncated_zip",
+      "passed": true
+    }
+  ],
+  "passed": 14,
+  "production_certified": false
+}
