@@ -1,11 +1,10 @@
 {
   "system": "Percept Intelligence Engine",
   "mode": "read-only",
-  "release": "BLOCKED",
+  "approved_policies": 3,
+  "document_release": "BLOCKED",
   "release_authorized": false,
-  "checks": "enabled",
   "verification": "not production-certified",
-  "source": "sanitized operational summary",
-  "updated_at": "2026-10-29",
-  "notice": "No confidential data or approval tokens included."
+  "updated_at": "2026-10-29T12:00:16Z",
+  "source": "approved policy count from Activepieces, no confidential data"
 }
