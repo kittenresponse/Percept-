@@ -1,0 +1,26 @@
+name: Percept CI Failure Incident Reporter
+on:
+  workflow_run:
+    workflows: ["Percept QR Release Gate"]
+    types: [completed]
+permissions:
+  issues: write
+jobs:
+  report:
+    if: github.event.workflow_run.conclusion == 'failure'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open or update incident for failed release gate
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RUN_URL: ${{ github.event.workflow_run.html_url }}
+          RUN_ID: ${{ github.event.workflow_run.id }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -eu
+          title="Automated failure: Percept QR Release Gate run ${RUN_ID}"
+          body="Automated detection from GitHub Actions.\n\nFailed run: ${RUN_URL}\n\nClassification: release-gate CI failure.\n\nInvestigation required; do not claim all releases are blocked until integration is proven."
+          gh issue create --repo "$REPO" --title "$title" --body "$(printf '%b' "$body")" --label "percept-mistake" || {
+            echo "Issue creation failed; ensure percept-mistake label exists."
+            exit 1
+          }
