@@ -1,0 +1,38 @@
+{
+  "id": "POL-010",
+  "version": "1.0",
+  "master_sha256": "cf46c133517346d0d71e12321e1be6d9ebbcb95f76de8cb2a47cb479f48a1c26",
+  "sheet": "xl/worksheets/sheet1.xml",
+  "styles": {
+    "N5": "105",
+    "D12": "92",
+    "E18": "136",
+    "G18": "81",
+    "H18": "100",
+    "O18": "103",
+    "O19": "113",
+    "G21": "144"
+  },
+  "parts": {
+    "[Content_Types].xml": "c5933af68854c4dfc93adb5d046dd3df2255a05adaf823b16a4bdd0a1ebafec2",
+    "_rels/.rels": "73e5a29f48d5ab979eeda062493bc7e679265c1344ef936978b8becec5549497",
+    "xl/workbook.xml": "e94d682d508a19afa3fd292b6d2cb0ca34d0fe64abda5dbf75405011477c222c",
+    "xl/_rels/workbook.xml.rels": "371ca5b9d79477a00c2a6f29d90f2c1ee9f14f96a2f931ca6a5943cffa08d7a9",
+    "xl/worksheets/sheet1.xml": "cf94ccf36d8796c412bf71d5b1f801609dc0c7fdc39437b9836dfa268c8dd5ef",
+    "xl/theme/theme1.xml": "4c6d88357d3695f39001d7126749b3d6f819f88defc4c3114093e45b0a855636",
+    "xl/styles.xml": "68f29ff762d808d0d0797fc954a6a82d3586dbec90691eaa4299e7c130fa4268",
+    "xl/sharedStrings.xml": "3052f5c479cfdc7bd3f19489193beb42321e7177e78436828800c2041040dc6d",
+    "xl/drawings/drawing1.xml": "88e3e48145b4fa056d5958afc6f3b62964729401c1a9e41824cb2121f1d8b323",
+    "xl/media/image1.png": "4a733b8519a7a13668494298556023dc6e79ff2d39de7b16036da40b50df728d",
+    "xl/media/image2.jpeg": "efbf2d2610f5e2cb64631cf0868df95d1b4cde1f965a7ee664e664e2146f5abd",
+    "xl/media/image3.jpeg": "f996a5e1f75afc776c8703b67dca3dab4e0e1722f36542959d145749b1ebeba5",
+    "xl/media/image4.jpeg": "d3e4354ad40f4d5f8f070f2ab1e32fd52c7fe4dc6e20401dafa4e1f369aa0d8c",
+    "xl/worksheets/_rels/sheet1.xml.rels": "046f319d2b01bf9529da901ae33cb1cf8c7c7d06395167875fa0c4add6bf34c3",
+    "xl/drawings/_rels/drawing1.xml.rels": "a83b5465f9143477704bcdb17958425ea09e90a3ab826e95db165a4ca663341a",
+    "xl/printerSettings/printerSettings1.bin": "40d007f5cfba7bca24c1a74d9665aab962fab5b2ad6157da54d6ea4aea2a9691",
+    "xl/calcChain.xml": "020a77361a932dd39ac5878bf18b1169160a1159789d7d5294af0b2c28845b89",
+    "docProps/core.xml": "876bda0c1b5f983bbe32f63d912f3fb5ffd48cb31d5fcf50c108416d1baa7b58",
+    "docProps/app.xml": "f283d0576e9d65bb9e6b8bc54d1f17d16b8e82f22e177c32a14eba9bc71eb440"
+  },
+  "normalized_sheet_sha256": "a7caaa4beafeb28a3cdb4aae1d832e42d42fd21c0ea03c348f3e44f22d98af12"
+}
