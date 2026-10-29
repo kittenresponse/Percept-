@@ -1,9 +1,9 @@
 {
   "system": "Percept Intelligence Engine",
   "mode": "read-only",
-  "approved_policies": 3,
+  "approved_policies": 4,
   "document_release": "BLOCKED",
   "release_authorized": false,
   "verification": "not production-certified",
-  "updated_at": "2026-10-29T12:13:13.693Z"
+  "updated_at": "2026-10-29T13:00:38.447Z"
 }
