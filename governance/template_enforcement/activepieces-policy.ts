@@ -35,7 +35,7 @@ export const code = async (inputs) => {
  else defects.push({rule:'EXACT_APPROVAL',reason:'Authenticated signature, identity, freshness and authority not independently verified'});
  for(const k of ['Request ID','Document SHA256','Serial number','Master Drive file ID','Master SHA256','Archive Drive file ID','Archive SHA256','Validation evidence'])
  if(!get(k))defects.push({rule:'EVIDENCE',reason:'Missing '+k});
- const masters={'quotation':'1qVcjPjyFQEJTXqAbg_rblE4s5LZ4OKDM','invoice':'1_Igu2OCHJrru8rBAc9qsA-iTFEDH9McD'};
+ const masters={'quotation':'15j3JLl57sQyvqBqHK3fDLxigZ_5Y2sLg','invoice':'1_Igu2OCHJrru8rBAc9qsA-iTFEDH9McD'};
  const kind=get('Document type').toLowerCase();
  if(['quotation','invoice'].includes(kind)){
    const expected=masters[kind];
