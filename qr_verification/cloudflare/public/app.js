@@ -4,17 +4,17 @@ const UUID=/^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]
 const $=id=>document.getElementById(id);
 let activeRecord=null,lookupGeneration=0;
 function statusFor(record){
- const allowed=['verified','pending','revoked','superseded','expired','test'];
+ const allowed=['verified','approved','pending','revoked','superseded','expired','test'];
  if(record.is_test||/^TEST ONLY/i.test(record.title_public||''))return 'test';
  return allowed.includes(record.status)?record.status:'pending';
 }
 function displayRecord(record){
  activeRecord=record;const status=statusFor(record);
  $('badge').className='badge '+status;
- $('badge').textContent=status==='test'?'TEST RECORD — NOT VALID FOR BUSINESS USE':status==='verified'?'REGISTERED AS VERIFIED':status.toUpperCase();
+ $('badge').textContent=status==='test'?'TEST RECORD — NOT VALID FOR BUSINESS USE':status==='verified'?'REGISTERED AS VERIFIED':status==='approved'?'APPROVED IN REGISTRY — CERTIFICATION NOT CONFIRMED':status.toUpperCase();
  $('recordTitle').textContent=record.title_public||'Document registry record';
  for(const [id,key] of [['reference','document_reference'],['type','document_type'],['issuer','issuer_public'],['issued','issued_on'],['checked','checked_at']])$(id).textContent=record[key]||'Not provided';
- $('scope').textContent=status==='test'?'This is a demonstration record only. It is not a business certificate and does not validate any transaction.':record.verification_scope||'Registry lookup only. This is not a digital signature.';
+ $('scope').textContent=status==='test'?'This is a demonstration record only. It is not a business certificate and does not validate any transaction.':record.verification_scope||'Registry lookup only. An approved registry entry does not by itself establish independent production certification or a digital signature.';
  $('fileHelp').textContent=record.file_sha256?'A registered fingerprint is available. Select your PDF to compare its exact bytes locally.':'This record has no public file fingerprint. Exact-file checking is not yet enabled.';
  $('file').value='';$('fileResult').textContent='';$('result').hidden=false;
 }
