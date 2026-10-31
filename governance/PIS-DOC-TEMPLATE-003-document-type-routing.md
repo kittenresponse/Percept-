@@ -1,9 +1,9 @@
 # PIS-DOC-TEMPLATE-003 — Document-Type Master Selection
-Date: 19 October 2026
+Date: 19 October 2026; routing amended 31 October 2026
 Status: governance rule recorded; runtime gateway enforcement pending integration and test.
 
 ## Binding routing
-- QUOTATION -> Percept official Quotation 428 approved master (Drive ID 1qVcjPjyFQEJTXqAbg_rblE4s5LZ4OKDM).
+- QUOTATION -> Percept official Quotation 428 approved master, CEO-approved telephone correction +93 780 40 44 22 (active Drive ID 15j3JLl57sQyvqBqHK3fDLxigZ_5Y2sLg). Original design reference (historical Drive ID 1qVcjPjyFQEJTXqAbg_rblE4s5LZ4OKDM) is preserved, not the active source for new quotations.
 - INVOICE / PRO FORMA -> Percept Approved Invoice Master 428 Design (Drive ID 1_Igu2OCHJrru8rBAc9qsA-iTFEDH9McD).
 - GENERAL LETTER -> CEO-approved Version 5 official letterhead.
 - Reports -> approved report-specific master, where available.
