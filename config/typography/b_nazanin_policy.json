@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "PERCEPT-TYPOGRAPHY-FA-001",
+  "name": "B Nazanin Persian/Dari document font",
+  "status": "configured_pending_licensed_font_and_runtime_verification",
+  "scope": [
+    "Percept Intelligence System",
+    "document generation",
+    "quotation",
+    "invoice",
+    "report",
+    "contract"
+  ],
+  "languages": [
+    "fa",
+    "fa-AF"
+  ],
+  "family": "B Nazanin",
+  "font_source": "licensed_private_asset",
+  "font_paths": {
+    "regular": "/opt/percept/private-fonts/BNAZANIN_ATAALAVI.TTF",
+    "bold": "/opt/percept/private-fonts/BNAZANB.TTF"
+  },
+  "direction": "rtl",
+  "requires_shaping": true,
+  "fallback_family": "Noto Naskh Arabic",
+  "ocr_recognition_unchanged": true,
+  "approved_artwork_unchanged": true,
+  "production_ready": false,
+  "release_condition": "Licensed font mounted; fontconfig match verified; RTL sample PDF rendering and embedding verified"
+}
