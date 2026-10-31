@@ -14,9 +14,10 @@
   "drive": {
     "root": "Percept",
     "root_folder_id": "1850BVPDYq1ULH5u8uU1NwZnzL5Uxd87I",
-    "default_archive_folder": "Percept/Document Archive/Unclassified",
+    "default_archive_folder": "Percept/Document Archive — Unclassified Intake",
     "routing": "Known client/project -> corresponding Google Drive folder; unknown -> unclassified intake folder",
-    "permissions": "private_by_default"
+    "permissions": "private_by_default",
+    "default_archive_folder_id": "1lnS1MDNLhBiTgv0aNxoQlFbmmkz0OHIw"
   },
   "workflow": [
     "Generate artifact",
