@@ -4,3 +4,6 @@ header img{width:180px;height:auto;flex-shrink:0;object-fit:contain}@media(max-w
 
 /* Approved centered verification branding, all screen sizes. */
 header{flex-direction:column;align-items:center;text-align:center;gap:12px}header img{display:block;margin-inline:auto}header>div{width:100%}
+
+/* Registry-approved is distinct from independently verified. */
+.badge.approved{background:#fff0cc;color:#775000}
