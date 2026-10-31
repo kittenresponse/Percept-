@@ -1,0 +1,49 @@
+{
+  "policy_id": "PERCEPT-ARCHIVE-001",
+  "version": "1.0.0",
+  "effective_date": "2026-10-31",
+  "authority": "CEO directive",
+  "status": "approved_policy_implementation_partial",
+  "scope": "All Percept-generated files including PDF, PNG, DOCX, XLSX, PPTX, ZIP, JSON, HTML, reports, drafts, approvals, sources and supporting files.",
+  "system_of_record": "Google Drive",
+  "chatgpt_library": {
+    "allowed_as_archive": false,
+    "automatic_save": false,
+    "retention": "Do not deliberately upload generated Percept files to ChatGPT Library. Chat conversation attachments and temporary local files may exist and cannot be universally disabled by this repository policy."
+  },
+  "drive": {
+    "root": "Percept",
+    "root_folder_id": "1850BVPDYq1ULH5u8uU1NwZnzL5Uxd87I",
+    "default_archive_folder": "Percept/Document Archive/Unclassified",
+    "routing": "Known client/project -> corresponding Google Drive folder; unknown -> unclassified intake folder",
+    "permissions": "private_by_default"
+  },
+  "workflow": [
+    "Generate artifact",
+    "Determine classification and destination",
+    "Upload artifact bytes to Google Drive",
+    "Read back Drive file metadata (id, title, size, MIME, parent)",
+    "Compare expected attributes and checksum if bytes available",
+    "Write archival receipt with Drive file id, original filename, source, timestamps, SHA-256 if available, verification status",
+    "Only after verified Drive readback mark ARCHIVED"
+  ],
+  "fail_closed": {
+    "on_upload_failure": "BLOCKED_NOT_ARCHIVED",
+    "on_readback_failure": "BLOCKED_NOT_VERIFIED",
+    "on_missing_archive_id": "BLOCKED_NOT_VERIFIED",
+    "external_distribution": "separate CEO approval and release gate; archival approval is not publication approval"
+  },
+  "no_outreach": true,
+  "completion_rule": "Never say saved/synced/archived unless Google Drive returns success and independent readback confirms item. Never fabricate a Drive link.",
+  "enforcement_boundary": "Applies to Percept-operated generators and integrations only when they call the archive gate; it does not install a platform-wide interception hook in ChatGPT or automatically archive unrelated existing conversation attachments.",
+  "required_receipt": [
+    "artifact_name",
+    "drive_file_id",
+    "drive_folder_id",
+    "mime_type",
+    "size_bytes",
+    "sha256_if_available",
+    "archive_time",
+    "verification_status"
+  ]
+}
